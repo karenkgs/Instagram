@@ -13,7 +13,35 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+    
+        Pessoa *p = [[Pessoa alloc] init];
         
+        [p setPessoaId: @20];
+        [p setSenha: @"hue"];
+        [p setSite: @"Olar.com"];
+        [p setMapa: @"Canada"];
+        [p setNomeCompleto: @"Euzi"];
+        [p setNomeUsuario: @"Euzinha"];
+
+        [p addFoto:@"Hue"];
+        [p addFoto:@"Linda"];
+        [p addFoto:@"Gata"];
+        [p addFoto:@"Olar"];
+        [p addFoto:@"Baby"];
+        
+        [p listarFotos];
+        
+        Foto *f = [[Foto alloc] init];
+        
+        [f curtir: p];
+        [f listarCurtidas];
+        [f comentar: p];
+        
+        [f listarComentarios];
+    }
+    return 0;
+}
+    
         /*NSArray *array  = @[@1,@2];
         
         for (int i=0; i<array.count; i++) {
@@ -26,37 +54,3 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%@",num) ;
         }
         */
-        
-        Pessoa *p = [[Pessoa alloc] init];
-        
-        
-        [p setPessoaId: @20];
-        [p setSenha: @"hue"];
-        [p setSite: @"Olar.com"];
-        [p setMapa: @"Canada"];
-        [p setNomeCompleto: @"Euzi"];
-        [p setNomeUsuario: @"Euzinha"];
-
-        
-        [p addFoto:@"Hue"];
-        [p addFoto:@"Linda"];
-        [p addFoto:@"Gata"];
-        [p addFoto:@"Olar"];
-        [p addFoto:@"Baby"];
-        
-        
-        [p listarFotos];
-        
-        Foto *f = [[Foto alloc] init];
-        [f curtir: p];
-        [f listarCurtidas];
-        [f comentar: p];
-        [f listarComentarios];
-        
-        
-        
-        
-        
-    }
-    return 0;
-}
