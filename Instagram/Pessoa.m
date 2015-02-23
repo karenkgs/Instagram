@@ -40,7 +40,7 @@
 -(void)listarFotos
 {
     for (int i=0; i< self.listaFotos.count; i++) {
-        NSLog(@"%@",[self.listaFotos[i] descricao]) ;
+        NSLog(@"Foto: \n %@",[self.listaFotos[i] descricao]) ;
     }
 
 }

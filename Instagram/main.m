@@ -13,19 +13,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
-        /*NSArray *array  = @[@1,@2];
-        
-        for (int i=0; i<array.count; i++) {
-            NSLog(@"%@",array[i]) ;
-        }
-        
-        
-        for(NSNumber *num in array)
-        {
-            NSLog(@"%@",num) ;
-        }
-        */
+
         
         Pessoa *p = [[Pessoa alloc] init];
         

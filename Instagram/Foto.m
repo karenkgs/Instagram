@@ -36,7 +36,7 @@
 -(void)listarCurtidas
 {
     for (int i=0; i< self.listaCurtidas.count; i++) {
-        NSLog(@"%@",[self.listaCurtidas[i] nomeUsuario]) ;
+        NSLog(@"Curtiu: %@",[self.listaCurtidas[i] nomeUsuario]) ;
     }
     
 }
@@ -70,7 +70,7 @@
 -(void)listarComentarios
 {
     for (int i=0; i< self.listaComentarios.count; i++) {
-        NSLog(@"%@",[self.listaComentarios[i] dono]) ;
+        NSLog(@"Comentario: %@ \n De: %@",[self.listaComentarios[i] descricao], [self.listaComentarios[i] dono]) ;
     }
     
 }
